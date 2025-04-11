@@ -1,72 +1,327 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dhaka Radio Live</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f8f9fa;
-        }
-        .radio-container {
-            text-align: center;
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-        .btn-toggle {
-            width: 100px;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>বাংলাদেশ ই-ভোটিং</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link rel="stylesheet" href="animate.compat.css">
+  <link rel="stylesheet" href="custom.css">
 </head>
-<body>
-    <div class="radio-container">
-        <h2>Dhaka FM 90.4</h2>
-        <!-- Make sure the stream link is correct -->
-        <audio id="radioPlayer" src="https://stream-151.zeno.fm/6a4y92nptneuv" preload="auto"></audio>
-        <button id="toggleBtn" class="btn btn-primary btn-toggle mt-3">Play</button>
+<body style="background-color: rgb(11, 58, 26); color: white; font-family: 'Kalpurush', sans-serif;">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-success navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">বাংলাদেশ ই-ভোটিং</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class=" text-white text-center py-2" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/55/Sundarbans_Bangladesh.jpg'); background-size: cover; background-position: center;">
+    <h1 class="display-4 fw-bold text-shadow">স্মার্ট বাংলাদেশ, স্মার্ট ভোটিং</h1>
+    <p class="lead">গণতন্ত্রে বিশ্বাসী প্রতিটি নাগরিকের জন্য</p>
+  </header>
+
+  <!-- About Section -->
+  <section class="container my-5">
+    <h2 class="text-center text-danger fw-bold">আমাদের প্রিয় বাংলাদেশ</h2>
+    <p class="lead text-center">বাংলাদেশের প্রকৃতি, সংস্কৃতি, ইতিহাস এবং মানুষের জীবনধারা বিশ্বের কাছে এক অনন্য উদাহরণ।</p>
+    <div class="row">
+      <div class="col-md-4"><img class="img-fluid rounded mb-4" src="images (1).jpeg"></div>
+      <div class="col-md-4"><img class="img-fluid rounded mb-4" src="images (2).jpeg"></div>
+      <div class="col-md-4"><img class="img-fluid rounded mb-4" src="a-journey-of-success-in-bangladesh-banner-2880x1386.jpg"></div>
+    </div>
+  </section>
+  <section class="bss-why-hire">
+    <div class="container container-xl-custom h-100">
+
+        <div class="row align-items-center why-hire-container">
+            <div class="col col-md-4 d-flex flex-column">
+                <div class="whu-grid-item bss-theme-color-bg m-3 position-relative appear-animation animated fadeInLeft appear-animation-visible" data-appear-animation="fadeInLeft" data-appear-animation-delay="400" style="left: 150px; animation-delay: 400ms;">
+                    <div class="whu-grid-item-icon grd-item-icn-res d-none p-3"><i class="fas fa-coins fa-lg"></i></div>
+                    <div class="whu-grid-item-text text-center text-white border-radius-2 d-inline-block">গণতন্ত্রকে শক্তিশালী করার জন্য</div>
+                    <div class="whu-grid-item-icon p-3"><i class="fas fa-coins fa-lg"></i></div>
+                </div>
+                <div class="whu-grid-item bss-theme-color-bg m-3 position-relative appear-animation animated fadeInLeft appear-animation-visible" data-appear-animation="fadeInLeft" data-appear-animation-delay="300" style="left: 50px; animation-delay: 300ms;">
+                    <div class="whu-grid-item-icon grd-item-icn-res d-none p-3"><i class="fas fa-credit-card fa-lg"></i></div>
+                    <div class="whu-grid-item-text text-center text-white border-radius-2 d-inline-block">নিজের কণ্ঠস্বর তুলে ধরার জন্য</div>
+                    <div class="whu-grid-item-icon p-3"><i class="fas fa-credit-card fa-lg"></i></div>
+                </div>
+                <div class="whu-grid-item bss-theme-color-bg m-3 position-relative appear-animation animated fadeInLeft appear-animation-visible" data-appear-animation="fadeInLeft" data-appear-animation-delay="200" style="animation-delay: 200ms;">
+                    <div class="whu-grid-item-icon grd-item-icn-res d-none p-3"><i class="fas fa-users fa-lg"></i></div>
+                    <div class="whu-grid-item-text text-center text-white border-radius-2 d-inline-block">ভবিষ্যৎ নেতৃত্ব নির্বাচনের জন্য</div>
+                    <div class="whu-grid-item-icon p-3"><i class="fas fa-users fa-lg"></i></div>
+                </div>
+                <div class="whu-grid-item bss-theme-color-bg m-3 position-relative appear-animation animated fadeInLeft appear-animation-visible" data-appear-animation="fadeInLeft" data-appear-animation-delay="300" style="left: 50px; animation-delay: 300ms;">
+                    <div class="whu-grid-item-icon grd-item-icn-res d-none p-3"><i class="fas fa-laptop fa-lg"></i></div>
+                    <div class="whu-grid-item-text text-center text-white border-radius-2 d-inline-block">সুশাসন প্রতিষ্ঠার জন্য</div>
+                    <div class="whu-grid-item-icon p-3"><i class="fas fa-laptop fa-lg"></i></div>
+                </div>
+                <div class="whu-grid-item bss-theme-color-bg m-3 position-relative appear-animation animated fadeInLeft appear-animation-visible" data-appear-animation="fadeInLeft" data-appear-animation-delay="400" style="left: 150px; animation-delay: 400ms;">
+                    <div class="whu-grid-item-icon grd-item-icn-res d-none p-3"><i class="fas fa-globe fa-lg"></i></div>
+                    <div class="whu-grid-item-text text-center text-white border-radius-2 d-inline-block"> দুর্নীতির বিরুদ্ধে অবস্থান নেয়ার জন্য</div>
+                    <div class="whu-grid-item-icon p-3"><i class="fas fa-globe fa-lg"></i></div>
+                </div>
+
+            </div>
+            <div class="col col-md-4 d-flex flex-column justify-content-center align-items-center why-hire_circle">
+                <div class="bss-box-2 appear-animation animated zoomIn appear-animation-visible" data-appear-animation="zoomIn" style="animation-delay: 100ms;">
+                    <div class="bss-whu-box">
+                        <div class="bss-whu-box-contnt">
+                            <div class="bss-whu-heading">
+                                <h1 class="text-center appear-animation animated fadeIn appear-animation-visible" data-appear-animation="fadeIn" data-appear-animation-delay="100" style="animation-delay: 100ms;">আপনি কেন ভোট দেবেন ?</h1>
+                            </div>
+                          
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col col-md-4 d-flex flex-column">
+                <div class="whu-grid-item-2 bss-theme-color-bg m-3 position-relative appear-animation animated fadeInRight appear-animation-visible" style="right: 150px; animation-delay: 400ms;" data-appear-animation="fadeInRight" data-appear-animation-delay="400">
+                    <div class="whu-grid-item-icon-2 p-3"><i class="fas fa-building fa-lg"></i></div>
+                    <div class="whu-grid-item-text-2 text-center text-white border-radius-2 d-inline-block">পরিবর্তনের জন্য একটি সুযোগ হিসেবে</div>
+                </div>
+                <div class="whu-grid-item-2 bss-theme-color-bg m-3 position-relative appear-animation animated fadeInRight appear-animation-visible" style="right: 50px; animation-delay: 300ms;" data-appear-animation="fadeInRight" data-appear-animation-delay="300">
+                    <div class="whu-grid-item-icon-2 p-3"><i class="fas fa-adjust fa-lg"></i></div>
+                    <div class="whu-grid-item-text-2 text-center text-white border-radius-2 d-inline-block">পরবর্তী প্রজন্মের জন্য একটি ভালো দেশ গঠনে</div>
+                </div>
+                <div class="whu-grid-item-2 bss-theme-color-bg m-3 position-relative appear-animation animated fadeInRight appear-animation-visible" data-appear-animation="fadeInRight" data-appear-animation-delay="200" style="animation-delay: 200ms;">
+                    <div class="whu-grid-item-icon-2 p-3"><i class="fas fa-paper-plane fa-lg"></i></div>
+                    <div class="whu-grid-item-text-2 text-center text-white border-radius-2 d-inline-block"> স্থানীয় সমস্যার সমাধানে অবদান রাখতে</div>
+                </div>
+                <div class="whu-grid-item-2 bss-theme-color-bg m-3 position-relative appear-animation animated fadeInRight appear-animation-visible" style="right: 50px; animation-delay: 300ms;" data-appear-animation="fadeInRight" data-appear-animation-delay="300">
+                    <div class="whu-grid-item-icon-2 p-3"><i class="fas fa-tools fa-lg"></i></div>
+                    <div class="whu-grid-item-text-2 text-center text-white border-radius-2 d-inline-block">ভোট না দিলে, অন্যরা আপনার হয়ে সিদ্ধান্ত নেবে</div>
+                </div>
+                <div class="whu-grid-item-2 bss-theme-color-bg m-3 position-relative appear-animation animated fadeInRight appear-animation-visible" style="right: 150px; animation-delay: 400ms;" data-appear-animation="fadeInRight" data-appear-animation-delay="400">
+                    <div class="whu-grid-item-icon-2 p-3"><i class="fas fa-tasks fa-lg"></i></div>
+                    <div class="whu-grid-item-text-2 text-center text-white border-radius-2 d-inline-block"> নিজের অধিকার ব্যবহার করার জন্য</div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+  
+ 
+
+  <!-- Voting Section -->
+  <section class="container my-5">
+    <h2 class="text-center text-danger  fw-bold">ভোট দিন</h2>
+
+    <!-- Multiple Questions -->
+    <div id="vote-questions"></div>
+
+  </section>
+  <div class="container my-5">
+    <h2 class="text-center text-success mb-4">বাংলাদেশের সৌন্দর্য</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <img src="Sundarbans_mangroves_forest_bangladesh.jpg" class="img-fluid rounded shadow" alt="Sundarbans Tiger">
+        <p class="text-center mt-2">সুন্দরবনের বাঘ</p>
+      </div>
+      <div class="col-md-4">
+        <img src="Sajek-Valley-01.webp" class="img-fluid rounded shadow" alt="Sajek Valley">
+        <p class="text-center mt-2">সাজেক ভ্যালি</p>
+      </div>
+      <div class="col-md-4">
+        <img src="ষাট-গম্বুজ-মসজিদ-770x420.jpg" class="img-fluid rounded shadow" alt="Sixty Dome Mosque">
+        <p class="text-center mt-2">ষাট গম্বুজ মসজিদ</p>
+      </div>
+      <div class="col-md-4">
+        <img src="images.jpeg" class="img-fluid rounded shadow" alt="Cox's Bazar">
+        <p class="text-center mt-2">কক্সবাজার সমুদ্র সৈকত</p>
+      </div>
+      <div class="col-md-4">
+        <img src="Lalbag_Fort_Front.jpg" class="img-fluid rounded shadow" alt="Lalbagh Fort">
+        <p class="text-center mt-2">লালবাগ কেল্লা</p>
+      </div>
+      <div class="col-md-4">
+        <img src="jaflong-sylhet-02.webp" class="img-fluid rounded shadow" alt="Jaflong">
+        <p class="text-center mt-2">জাফলং</p>
+      </div>
+    </div>
+  </div>
+
+<style>
+  .img-fluid {
+    height: 250px; /* Set the same height for all images */
+    object-fit: cover; /* Ensure that the images cover the space without distortion */
+  }
+</style>
+
+<footer class="bg-dark text-white pt-5 pb-4">
+  <div class="container text-md-left">
+    <div class="row">
+
+      <!-- Emergency Contacts -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase fw-bold text-success mb-4">
+          📞 জরুরি সেবা
+        </h5>
+        <p><i class="bi bi-telephone-fill text-success"></i> জাতীয় জরুরি নম্বর: ৯৯৯</p>
+        <p><i class="bi bi-shield-lock text-success"></i> পুলিশ: ৯৯৯</p>
+        <p><i class="bi bi-fire text-success"></i> ফায়ার সার্ভিস: ৯৯৫</p>
+        <p><i class="bi bi-heart-pulse-fill text-success"></i> অ্যাম্বুলেন্স: ১৬২৬৩</p>
+        <p><i class="bi bi-person-fill-exclamation text-success"></i> নারী ও শিশু হেল্পলাইন: ১০৯</p>
+      </div>
+
+      <!-- Government Links -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase fw-bold text-success mb-4">
+          🏛️ সরকারি সেবা
+        </h5>
+        <p><a href="https://bangladesh.gov.bd" class="text-white text-decoration-none">জাতীয় পোর্টাল</a></p>
+        <p><a href="https://mopa.gov.bd" class="text-white text-decoration-none">জনপ্রশাসন মন্ত্রণালয়</a></p>
+        <p><a href="https://moedu.gov.bd" class="text-white text-decoration-none">শিক্ষা মন্ত্রণালয়</a></p>
+        <p><a href="https://modmr.gov.bd" class="text-white text-decoration-none">দুর্যোগ মন্ত্রণালয়</a></p>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase fw-bold text-success mb-4">
+          📍 যোগাযোগ
+        </h5>
+        <p><i class="bi bi-geo-alt-fill text-success"></i> ঢাকা, বাংলাদেশ</p>
+        <p><i class="bi bi-hospital-fill text-success"></i> ঢাকা মেডিকেল: +880-2-55165088</p>
+        <p><i class="bi bi-building text-success"></i> প্রধানমন্ত্রীর কার্যালয়: +880-2-55060601</p>
+        <p><i class="bi bi-airplane-engines text-success"></i> বিমানবন্দর হেল্প ডেস্ক: +880-2-8901600</p>
+      </div>
+
+      <!-- Developer Info -->
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase fw-bold text-success mb-4">
+          👨‍💻 ডিজাইন ও নির্মাণ
+        </h5>
+        <p><i class="bi bi-person-circle text-success"></i> Ridwan Bin Ahsan</p>
+        <p><i class="bi bi-globe text-success"></i> সম্পূর্ণ রেসপনসিভ ও তথ্যবহুল</p>
+        <p><i class="bi bi-c-circle text-success"></i> সর্বস্বত্ব সংরক্ষিত © ২০২৫</p>
+      </div>
     </div>
 
-    <script>
-        const radio = document.getElementById("radioPlayer");
-        const toggleBtn = document.getElementById("toggleBtn");
+    <!-- Horizontal line -->
+    <hr class="my-4 text-white">
 
-        let isPlaying = false;
+    <!-- Bottom section -->
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <p class="mb-0">🇧🇩 বাংলাদেশকে জানুন, জানুন নিজের পরিচয়।</p>
+      </div>
+    </div>
+  </div>
+</footer>
 
-        // Try to preload the radio stream on load to check for availability
-        radio.oncanplaythrough = () => {
-            console.log('Radio stream ready!');
-        };
 
-        // Error handling for stream issues
-        radio.onerror = () => {
-            alert('Failed to load radio stream. Please check the URL or your internet connection.');
-            console.error('Stream error:', radio.error);
-        };
+  <!-- Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
 
-        toggleBtn.addEventListener("click", function() {
-            if (isPlaying) {
-                radio.pause();
-                toggleBtn.textContent = "Play";
-                toggleBtn.classList.replace("btn-danger", "btn-primary");
-                isPlaying = false;
-            } else {
-                radio.play().then(() => {
-                    toggleBtn.textContent = "Stop";
-                    toggleBtn.classList.replace("btn-primary", "btn-danger");
-                    isPlaying = true;
-                }).catch(error => {
-                    console.error("Error playing the radio:", error);
-                    alert('There was an error playing the radio. Please try again.');
-                });
-            }
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyA68w46Zp0dow9D3qOZx2dTNPUS9CbG_KM",
+      authDomain: "kicuna-ceb0c.firebaseapp.com",
+      projectId: "kicuna-ceb0c",
+      storageBucket: "kicuna-ceb0c.appspot.com",
+      messagingSenderId: "1089007814850",
+      appId: "1:1089007814850:web:3e2eebfe580e447304535b",
+      measurementId: "G-H47T37C1TE",
+      databaseURL: "https://kicuna-ceb0c-default-rtdb.firebaseio.com"
+    };
+
+    const app = firebase.initializeApp(firebaseConfig);
+    const database = firebase.database();
+
+    const questions = [
+      {
+        id: 'q1',
+        question: 'বাংলাদেশের শিক্ষা ব্যবস্থায় প্রযুক্তি যুক্ত হওয়া উচিত কিনা?',
+        options: ['হ্যাঁ', 'না']
+      },
+      {
+        id: 'q2',
+        question: 'আপনি কি মনে করেন সব সরকারি সেবা অনলাইনে হওয়া উচিত?',
+        options: ['অবশ্যই', 'না ঠিক আছে এখন']
+      },
+      {
+        id: 'q3',
+        question: 'বাংলাদেশের পর্যটন খাতকে আরও উন্নয়ন করা উচিত?',
+        options: ['হ্যাঁ', 'না', 'মধ্যম পর্যায়ে']
+      },
+      {
+        id: 'q4',
+        question: 'বাংলাদেশের পর্যটন খাতকে আরও উন্নয়ন করা উচিত?',
+        options: ['হ্যাঁ', 'না', 'মধ্যম পর্যায়ে']
+      }
+    ];
+
+    function renderQuestions() {
+      const container = document.getElementById('vote-questions');
+      questions.forEach(q => {
+        const form = document.createElement('form');
+        form.classList.add('card', 'p-4', 'mb-3');
+        form.innerHTML = `<h5>${q.question}</h5>` +
+          q.options.map(opt => {
+            const id = q.id + '-' + opt;
+            return `
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="${q.id}" value="${opt}" id="${id}" required>
+                <label class="form-check-label d-flex justify-content-between" for="${id}">
+                  <span>${opt}</span>
+                  <span class="badge bg-danger" id="count-${q.id}-${opt}">0</span>
+                </label>
+              </div>
+            `;
+          }).join('') +
+          `<button type="submit" class="btn btn-success mt-3">ভোট দিন</button>`;
+
+        form.addEventListener('submit', (e) => handleVote(e, q.id));
+        container.appendChild(form);
+      });
+    }
+
+    function handleVote(event, qid) {
+      event.preventDefault();
+      const form = event.target;
+      const selected = form.querySelector(`input[name='${qid}']:checked`);
+      if (!selected) return;
+
+      const voteValue = selected.value;
+      const ref = database.ref(`votes/${qid}/${voteValue}`);
+
+      ref.get().then(snapshot => {
+        const current = snapshot.val() || 0;
+        ref.set(current + 1);
+        document.getElementById(`count-${qid}-${voteValue}`).textContent = current + 1;
+        form.reset();
+      });
+    }
+
+    function loadVoteCounts() {
+      questions.forEach(q => {
+        q.options.forEach(opt => {
+          const ref = database.ref(`votes/${q.id}/${opt}`);
+          ref.get().then(snapshot => {
+            const count = snapshot.val() || 0;
+            const countSpan = document.getElementById(`count-${q.id}-${opt}`);
+            if (countSpan) countSpan.textContent = count;
+          });
         });
-    </script>
+      });
+    }
+
+    window.onload = function() {
+      renderQuestions();
+      setTimeout(loadVoteCounts, 1000);
+    };
+  </script>
+  
 </body>
 </html>
+
